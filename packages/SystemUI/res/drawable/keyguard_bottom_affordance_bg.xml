@@ -28,7 +28,7 @@
           android:right="3dp"
           android:bottom="3dp">
         <shape android:shape="oval">
-          <solid android:color="?androidprv:attr/colorSurface"/>
+          <solid android:color="@drawable/keyguard_background_color"/>
           <size
               android:width="@dimen/keyguard_affordance_width"
               android:height="@dimen/keyguard_affordance_height"/>
@@ -56,7 +56,7 @@
           android:right="3dp"
           android:bottom="3dp">
         <shape android:shape="oval">
-          <solid android:color="?androidprv:attr/colorSurface"/>
+          <solid android:color="@drawable/keyguard_background_color"/>
           <size
               android:width="@dimen/keyguard_affordance_width"
               android:height="@dimen/keyguard_affordance_height"/>
