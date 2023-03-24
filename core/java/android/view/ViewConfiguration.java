@@ -37,6 +37,8 @@ import android.util.DisplayMetrics;
 import android.util.SparseArray;
 import android.util.TypedValue;
 
+import com.android.internal.annotations.GuardedBy;
+
 /**
  * Contains methods to standard constants used in the UI for timeouts, sizes, and distances.
  */
@@ -356,6 +358,7 @@ public class ViewConfiguration {
     @UnsupportedAppUsage
     private boolean sHasPermanentMenuKeySet;
 
+    @GuardedBy("sLock")
     @UnsupportedAppUsage
     static final SparseArray<ViewConfiguration> sConfigurations =
             new SparseArray<ViewConfiguration>(2);
